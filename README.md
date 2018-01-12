@@ -1,11 +1,11 @@
 # Simple-Vehicle-Control-Script
-A simple script which allows you to control certain aspects of your vehicle, such as doors, engine...
+A simple script which allows you to control certain aspects of your vehicle, such as doors, engine and more...
 
-**v0.2 Features:**
+**v0.3 Features:**
 * **/trunk:** Opens and closes the trunk.
 * **/hood:** Opens and closes the hood.
 * **/rdoors:** Opens and closes the two rear doors. (Mostly for use in vans)
-* **/engine <on/off>:** Switches the vehicle engine on and off.
+* **/engine (on/off):** Switches the vehicle engine on and off.
 * **/lock:** Locks and unlocks vehicle doors.
 * **/save:** Saves the current vehicle.
 * **/sveh:** Toggles "control saved vehicle only" mode. (Read changelog for more info)

@@ -184,14 +184,12 @@ AddEventHandler('save',function()
 			--remove from saved.
 			saveVehicle = nil
 			RemoveBlip(targetBlip)
-			SetEntityAsNoLongerNeeded(vehicle)
 			ShowNotification("Saved vehicle ~r~removed~w~.")
 			saved = false
 		else
 			RemoveBlip(targetBlip)
 			saveVehicle = GetVehiclePedIsIn(player,true)
 			local vehicle = saveVehicle
-			SetEntityAsMissionEntity(vehicle, true, true)
 			targetBlip = AddBlipForEntity(vehicle)
 			SetBlipSprite(targetBlip,225)
 			ShowNotification("This ~y~" .. GetLabelText(GetDisplayNameFromVehicleModel(GetEntityModel(vehicle))) .. "~w~ is now your~g~ saved ~w~vehicle.")

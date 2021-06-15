@@ -1,3 +1,12 @@
+-- R O O F --
+AddEventHandler('chatMessage', function(s, n, m)
+	local message = string.lower(m)
+	if message == "/roof" then
+		CancelEvent()
+		--------------
+		TriggerClientEvent('roof', s)
+	end
+end)
 -- E N G I N E --
 AddEventHandler('chatMessage', function(s, n, m)
 	local message = string.lower(m)

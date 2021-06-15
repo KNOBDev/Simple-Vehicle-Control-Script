@@ -7,6 +7,23 @@ engineoff = false
 saved = false
 controlsave_bool = false
 
+-- R O O F --
+RegisterNetEvent('roof')
+AddEventHandler('roof',function() 
+	local player = GetPlayerPed(-1)
+	if (IsPedSittingInAnyVehicle(player)) then 
+		local vehicle = GetVehiclePedIsIn(player,false)
+		local roofstate = GetConvertibleRoofState(vehicle)
+		if (roofState == 0) then
+			LowerConvertibleRoof(vehicle, false)
+		else if (roofState == 2)
+			RaiseConvertibleRoof(vehicle, false)
+		else
+			ShowNotification("~r~Wait for your roof to be fully extended/retracted")
+		end
+	end
+end)
+
 -- E N G I N E --
 IsEngineOn = true
 RegisterNetEvent('engine')

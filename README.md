@@ -2,6 +2,7 @@
 A simple script which allows you to control certain aspects of your vehicle, such as doors, engine and more...
 
 **v0.3.2 Features:**
+* **/roof:** Raises and lowers convertible roof.
 * **/trunk:** Opens and closes the trunk.
 * **/hood:** Opens and closes the hood.
 * **/rdoors:** Opens and closes the two rear doors. (Mostly for use in vans)
